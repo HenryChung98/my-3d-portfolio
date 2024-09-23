@@ -1,7 +1,7 @@
 import { useThree } from "@react-three/fiber";
 import { useState, useRef } from "react";
 import * as THREE from "three";
-import { Text3D, OrbitControls } from "@react-three/drei";
+import { Text3D, Html } from "@react-three/drei";
 import { gsap } from "gsap";
 
 export default function Name({
@@ -36,37 +36,39 @@ export default function Name({
 
   return (
     <>
-      <Text3D
-        font="/fonts/Poppins_Bold.json"
-        position={[-5, roomHeight / 2 - 1, 0.75]}
-        rotation={[0, THREE.MathUtils.degToRad(90), 0]}
-        size={0.3}
-        height={0.1}
-        onPointerOver={handlePointerOver}
-        onPointerOut={handlePointerOut}
-        onClick={handleClick}
-      >
-        HENRY CHUNG
-        <meshStandardMaterial
-          color={fontColor}
-          emissive={emissive}
-          emissiveIntensity={emissiveIntensity}
-        />
-      </Text3D>
-      <Text3D
-        font="/fonts/Poppins SemiBold_Regular.json"
-        position={[-5, roomHeight / 2 - 1.5, 1.7]}
-        rotation={[0, THREE.MathUtils.degToRad(90), 0]}
-        size={0.2}
-        height={0.1}
-      >
-        Game Developer / Web Developer
-        <meshStandardMaterial
-          color={fontColor}
-          emissive={emissive}
-          emissiveIntensity={emissiveIntensity}
-        />
-      </Text3D>
+      <group position={[-0.05, 0, -1]}>
+        <Text3D
+          font="/fonts/Poppins_Bold.json"
+          position={[-5, roomHeight / 2 - 1.1, 0]}
+          rotation={[0, THREE.MathUtils.degToRad(90), 0]}
+          size={0.3}
+          height={0.1}
+          onPointerOver={handlePointerOver}
+          onPointerOut={handlePointerOut}
+          onClick={handleClick}
+        >
+          HENRY CHUNG
+          <meshStandardMaterial
+            color={fontColor}
+            emissive={emissive}
+            emissiveIntensity={emissiveIntensity}
+          />
+        </Text3D>
+        <Text3D
+          font="/fonts/Poppins SemiBold_Regular.json"
+          position={[-5, roomHeight / 2 - 1.5, 0.3]}
+          rotation={[0, THREE.MathUtils.degToRad(90), 0]}
+          size={0.15}
+          height={0.1}
+        >
+          Game Developer / Web Developer
+          <meshStandardMaterial
+            color={fontColor}
+            emissive={emissive}
+            emissiveIntensity={emissiveIntensity}
+          />
+        </Text3D>
+      </group>
     </>
   );
 }

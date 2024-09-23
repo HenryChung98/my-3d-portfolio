@@ -11,8 +11,8 @@ export default function Room() {
   const roomDepth = 10;
 
   // window
-  const windowWidth = 3.5;
-  const windowHeight = 2.5;
+  const windowWidth = 3;
+  const windowHeight = 2;
   const windowDepth = 0.2;
 
   // for outside of window
