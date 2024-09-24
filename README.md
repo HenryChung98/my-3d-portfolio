@@ -12,3 +12,7 @@
 - npm install @react-spring/web
 - npm install gsap
 - https://gero3.github.io/facetype.js/ (font)
+- https://css-loaders.com/arcade/
+- https://animista.net/
+
+yellowCube, bookcase, coin, sword fbx are not supported

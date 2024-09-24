@@ -1,10 +1,10 @@
-import { useLoader, useThree } from "@react-three/fiber";
+import { useLoader } from "@react-three/fiber";
 import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader";
-import { useState, useEffect, useRef } from "react";
+import { useEffect } from "react";
 import * as THREE from "three";
-import { Text3D, OrbitControls, Html } from "@react-three/drei";
 
-export default function Mouse({ onClick }) {
+
+export default function Mouse({ onClick, setIsLoaded }) {
   const mouse = useLoader(FBXLoader, "/meshes/mouse.fbx");
 
   useEffect(() => {
@@ -14,6 +14,7 @@ export default function Mouse({ onClick }) {
           child.castShadow = true;
         }
       });
+      setIsLoaded((prev) => prev + 1);
     }
   }, [mouse]);
 

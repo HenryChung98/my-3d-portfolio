@@ -125,7 +125,7 @@ export default function Room() {
           receiveShadow
         >
           <boxGeometry args={[innerWindowWidth, innerWindowHeight, 0.2]} />
-          <meshStandardMaterial color="#0055ff" />
+          <meshStandardMaterial color="aqua" />
         </mesh>
       </group>
 

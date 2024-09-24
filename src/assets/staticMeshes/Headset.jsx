@@ -3,32 +3,36 @@ import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader";
 import { useEffect } from "react";
 import * as THREE from "three";
 
-export default function Monitor({ onClick, setIsLoaded }) {
-  const monitor = useLoader(FBXLoader, "/meshes/monitor.fbx");
+export default function Headset({ onClick, setIsLoaded }) {
+  const headset = useLoader(FBXLoader, "/meshes/headset.fbx");
 
   useEffect(() => {
-    if (monitor) {
-      monitor.traverse((child) => {
+    if (headset) {
+      headset.traverse((child) => {
         if (child.isMesh) {
           child.material = new THREE.MeshStandardMaterial({
-            color: 0x202020,
+            color: "#2a2a2a",
             roughness: 0.5,
-            metalness: 0.7,
+            metalness: 0.1,
           });
           child.castShadow = true;
         }
       });
       setIsLoaded((prev) => prev + 1);
     }
-  }, [monitor, setIsLoaded]);
+  }, [headset]);
 
   return (
     <>
       <primitive
-        object={monitor}
-        position={[-2, -1.6, -3]}
-        rotation={[0, THREE.MathUtils.degToRad(270), 0]}
-        scale={[0.02, 0.02, 0.02]}
+        object={headset}
+        position={[4.77, -0.8, -1.145]}
+        rotation={[
+          THREE.MathUtils.degToRad(150),
+          THREE.MathUtils.degToRad(228),
+          THREE.MathUtils.degToRad(160),
+        ]}
+        scale={[0.035, 0.035, 0.035]}
         onClick={onClick}
       />
     </>

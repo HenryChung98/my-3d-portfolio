@@ -1,10 +1,10 @@
-import { useLoader, useThree } from "@react-three/fiber";
+import { useLoader } from "@react-three/fiber";
 import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader";
-import { useState, useEffect, useRef } from "react";
+import { useEffect } from "react";
 import * as THREE from "three";
-import { Text3D, OrbitControls, Html } from "@react-three/drei";
 
-export default function Chair({onClick}) {
+
+export default function Chair({onClick, setIsLoaded }) {
   const chair = useLoader(FBXLoader, "/meshes/chair.fbx");
 
   useEffect(() => {
@@ -19,6 +19,7 @@ export default function Chair({onClick}) {
           child.castShadow = true;
         }
       });
+      setIsLoaded((prev) => prev + 1);
     }
   }, [chair]);
 

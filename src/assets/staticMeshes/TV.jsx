@@ -1,10 +1,9 @@
-import { useLoader, useThree } from "@react-three/fiber";
+import { useLoader } from "@react-three/fiber";
 import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader";
-import { useState, useEffect, useRef } from "react";
+import { useEffect } from "react";
 import * as THREE from "three";
-import { Text3D, OrbitControls, Html } from "@react-three/drei";
 
-export default function TV({ onClick }) {
+export default function TV({ onClick, setIsLoaded }) {
   const tv = useLoader(FBXLoader, "/meshes/tv.fbx");
   const tvShelf = useLoader(FBXLoader, "/meshes/tvShelf.fbx");
 
@@ -20,6 +19,7 @@ export default function TV({ onClick }) {
           child.castShadow = true;
         }
       });
+      setIsLoaded((prev) => prev + 1);
     }
     if (tv) {
       tv.traverse((child) => {
@@ -32,6 +32,7 @@ export default function TV({ onClick }) {
           child.castShadow = true;
         }
       });
+      setIsLoaded((prev) => prev + 1);
     }
   }, [tvShelf, tv]);
 

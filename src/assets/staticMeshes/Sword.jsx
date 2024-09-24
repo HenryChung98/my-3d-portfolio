@@ -3,16 +3,16 @@ import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader";
 import { useEffect } from "react";
 import * as THREE from "three";
 
-export default function Monitor({ onClick, setIsLoaded }) {
-  const monitor = useLoader(FBXLoader, "/meshes/monitor.fbx");
+export default function Sword({ onClick, setIsLoaded }) {
+  const sword = useLoader(FBXLoader, "/meshes/sword.fbx");
 
   useEffect(() => {
-    if (monitor) {
-      monitor.traverse((child) => {
+    if (sword) {
+      sword.traverse((child) => {
         if (child.isMesh) {
           child.material = new THREE.MeshStandardMaterial({
-            color: 0x202020,
-            roughness: 0.5,
+            color: "#ff0000",
+            roughness: 0.2,
             metalness: 0.7,
           });
           child.castShadow = true;
@@ -20,15 +20,19 @@ export default function Monitor({ onClick, setIsLoaded }) {
       });
       setIsLoaded((prev) => prev + 1);
     }
-  }, [monitor, setIsLoaded]);
+  }, [sword]);
 
   return (
     <>
       <primitive
-        object={monitor}
-        position={[-2, -1.6, -3]}
-        rotation={[0, THREE.MathUtils.degToRad(270), 0]}
-        scale={[0.02, 0.02, 0.02]}
+        object={sword}
+        position={[4.38, -1.41, 1.2]}
+        rotation={[
+          THREE.MathUtils.degToRad(0),
+          THREE.MathUtils.degToRad(330),
+          THREE.MathUtils.degToRad(70),
+        ]}
+        scale={[0.15, 0.15, 0.15]}
         onClick={onClick}
       />
     </>

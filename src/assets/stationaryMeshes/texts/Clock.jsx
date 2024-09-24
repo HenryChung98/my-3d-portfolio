@@ -29,7 +29,7 @@ export default function Clock({ fontColor, emissive, emissiveIntensity }) {
     <>
       <Text3D
         font="/fonts/Poppins_Bold.json"
-        position={[0, 1, roomDepth / 2 -0.01]}
+        position={[3.15, 1, roomDepth / 2 -0.01]}
         rotation={[0, THREE.MathUtils.degToRad(180), 0]}
         size={0.3}
         height={0.1}

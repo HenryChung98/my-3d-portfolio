@@ -1,7 +1,7 @@
 import { useThree } from "@react-three/fiber";
 import { useState, useRef } from "react";
 import * as THREE from "three";
-import { Text3D, Html } from "@react-three/drei";
+import { Text3D } from "@react-three/drei";
 import { gsap } from "gsap";
 
 export default function Name({

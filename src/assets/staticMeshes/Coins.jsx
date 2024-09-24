@@ -3,32 +3,32 @@ import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader";
 import { useEffect } from "react";
 import * as THREE from "three";
 
-export default function Monitor({ onClick, setIsLoaded }) {
-  const monitor = useLoader(FBXLoader, "/meshes/monitor.fbx");
+export default function Coins({ onClick, setIsLoaded }) {
+  const coins = useLoader(FBXLoader, "/meshes/coins.fbx");
 
   useEffect(() => {
-    if (monitor) {
-      monitor.traverse((child) => {
+    if (coins) {
+      coins.traverse((child) => {
         if (child.isMesh) {
           child.material = new THREE.MeshStandardMaterial({
-            color: 0x202020,
+            color: "#fae102",
             roughness: 0.5,
-            metalness: 0.7,
+            metalness: 0.9,
           });
           child.castShadow = true;
         }
       });
       setIsLoaded((prev) => prev + 1);
     }
-  }, [monitor, setIsLoaded]);
+  }, [coins]);
 
   return (
     <>
       <primitive
-        object={monitor}
-        position={[-2, -1.6, -3]}
+        object={coins}
+        position={[4.6, -2.92, -1]}
         rotation={[0, THREE.MathUtils.degToRad(270), 0]}
-        scale={[0.02, 0.02, 0.02]}
+        scale={[0.04, 0.04, 0.04]}
         onClick={onClick}
       />
     </>
