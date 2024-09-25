@@ -37,7 +37,9 @@ export default function Popups({ popups }) {
         </div>
       )}
       {popups === "projects" && (
-        <div className="puff-in-center fixed z-20 w-full h-full font-bold rounded p-2 bg-gray-200 flex justify-center items-center overflow-auto">
+        <div 
+        style={{backgroundColor: "#F5F5DC"}}
+        className="puff-in-center fixed z-20 w-full h-full font-bold rounded p-2 flex justify-center items-center overflow-auto">
           <ProjectDesc />
         </div>
       )}
@@ -45,10 +47,10 @@ export default function Popups({ popups }) {
         <>
           <div className="fixed top-1/2 left-1/2 z-20 transform -translate-y-1/2 -translate-x-1/2 m-2.5 flex justify-center items-center">
             <div
-              className="rotate-in-2-cw z-20 m-10 mb-64 min-w-max font-bold border-2 border-blue-500 rounded p-2 bg-gray-200 bg-opacity-80"
+              className="rotate-in-2-cw z-20 m-10 mb-64 min-w-max font-bold border-2 border-blue-500 rounded p-2 bg-gray-200 bg-opacity-90"
             >
               <h2 className="p-4 text-bold">Programming Languages</h2>
-              <ul className="list-none space-y-2">
+              <ul className="list-none space-y-2 text-gray-600">
                 <li className="before:content-['-'] before:mr-2">C#</li>
                 <li className="before:content-['-'] before:mr-2">C++</li>
                 <li className="before:content-['-'] before:mr-2">Python</li>
@@ -58,10 +60,10 @@ export default function Popups({ popups }) {
               </ul>
             </div>
             <div
-              className="rotate-in-2-cw z-20 m-10 mt-64 min-w-max font-bold border-2 border-blue-500 rounded p-2 bg-gray-200 bg-opacity-80"
+              className="rotate-in-2-cw z-20 m-10 mt-64 min-w-max font-bold border-2 border-blue-500 rounded p-2 bg-gray-200 bg-opacity-90"
             >
               <h2 className="p-4 text-bold">Libraries / Frameworks</h2>
-              <ul className="list-none space-y-2">
+              <ul className="list-none space-y-2 text-gray-600">
                 <li className="before:content-['-'] before:mr-2">
                   <a
                     href="https://r3f.docs.pmnd.rs/getting-started/introduction"
@@ -135,10 +137,10 @@ export default function Popups({ popups }) {
               </ul>
             </div>
             <div
-              className="rotate-in-2-cw z-20 m-10 mb-64 min-w-max font-bold border-2 border-blue-500 rounded p-2 bg-gray-200 bg-opacity-80"
+              className="rotate-in-2-cw z-20 m-10 mb-64 min-w-max font-bold border-2 border-blue-500 rounded p-2 bg-gray-200 bg-opacity-90"
             >
               <h2 className="p-4 text-bold">Engines, etc</h2>
-              <ul className="list-none space-y-2">
+              <ul className="list-none space-y-2 text-gray-600">
                 <li className="before:content-['-'] before:mr-2">
                   <a
                     href="https://www.unrealengine.com/en-US"
@@ -176,13 +178,13 @@ export default function Popups({ popups }) {
       )}
       {popups === "contact" && (
         <div
-          className="slide-in-elliptic-left-fwd absolute z-20 min-w-max transform -translate-y-1/2 -translate-x-1/2 m-2.5 font-bold border-2 border-blue-500 rounded p-2 bg-gray-200 bg-opacity-80 flex flex-col items-stretch"
+          className="slide-in-elliptic-left-fwd absolute z-20 min-w-max m-2.5 font-bold border-2 border-blue-500 rounded p-2 bg-gray-200 bg-opacity-90"
           style={{ top: "20%", left: "60%" }}
         >
           <div className="p-6">
             <h2 className="mb-4 text-center text-xl font-bold">SNS</h2>
             <div className="h-auto">
-              <p className="flex items-center space-x-2 mb-4">
+              <p className="flex items-center space-x-2 mb-4 text-gray-700">
                 <IoLogoGithub size={40} />
                 <a
                   href="https://github.com/HenryChung98"
@@ -193,7 +195,7 @@ export default function Popups({ popups }) {
                   GitHub
                 </a>
               </p>
-              <p className="flex items-center space-x-2 mb-4">
+              <p className="flex items-center space-x-2 mb-4 text-gray-700">
                 <IoLogoLinkedin size={40} />
                 <a
                   href="https://www.linkedin.com/in/henry-chung-0550812ab/"
@@ -204,7 +206,7 @@ export default function Popups({ popups }) {
                   LinkedIn
                 </a>
               </p>
-              <p className="flex items-center space-x-2 mb-4">
+              <p className="flex items-center space-x-2 mb-4 text-gray-700">
                 <IoLogoInstagram size={40} />
                 <a
                   href="https://www.instagram.com/henryy__98"
@@ -220,7 +222,7 @@ export default function Popups({ popups }) {
           <div className="p-6">
             <h2 className="mb-4 text-center text-xl font-bold">Contact</h2>
             <div className="h-auto">
-              <p className="flex items-center space-x-2 mb-4">
+              <p className="flex items-center space-x-2 mb-4 text-gray-700">
                 <IoIosMail size={40} />
                 <a
                   href="mailto:tongsik98@gmail.com"
@@ -229,7 +231,7 @@ export default function Popups({ popups }) {
                   Email
                 </a>
               </p>
-              <p className="flex items-center space-x-2 mb-4">
+              <p className="flex items-center space-x-2 mb-4 text-gray-700">
                 <MdOutlinePhoneIphone size={40} />
                 <a href="tel:(778)322-3951" className="text-lg hover:underline">
                   (778) 322-3951

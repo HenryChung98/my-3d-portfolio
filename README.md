@@ -13,4 +13,13 @@
 - npm install gsap(camera move animation)
 - netlify(deploy)
 
+[video to gif](https://ezgif.com/video-to-gif/ezgif-4-8988ceccde.mp4)
+- size: original(up to 600px)
+- frame rate(FPS): 20(max 15 seconds)
+- method: FFMPEG
+
 yellowCube, bookcase, coin, sword fbx are not supported
+
+instruction
+rainbow color clicked easter egg
+tv easter egg

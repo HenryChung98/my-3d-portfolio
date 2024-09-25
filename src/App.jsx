@@ -146,9 +146,14 @@ export default function App() {
   }
 
   // --------------------/camera handling when buttons clicked--------------------
-
+  const isWindowSizeLessThan500 = window.innerWidth < 500
   return (
     <>
+      {isWindowSizeLessThan500 ? (
+        <div className="absolute top-1/2 left-1/2 z-50">
+          if you are using mobile, touch it.
+        </div>
+      ) : null}
       <main className="h-screen">
         {showLoading && (
           <LoadingScreen isLoaded={isMeshesLoaded} meshTotal={meshTotal} />
@@ -177,7 +182,9 @@ export default function App() {
             projectsClick={() =>
               handleBtnClick(-2, -1.1, -2.7, -2, -1.1, -5, "projects")
             }
-            skillsClick={() => handleBtnClick(1.5, -1, -0.6, 6, -1, 1, "skills")}
+            skillsClick={() =>
+              handleBtnClick(1.5, -1, -0.6, 6, -1, 1, "skills")
+            }
             contactClick={() =>
               handleBtnClick(-3, -1, -2.2, -2.8, -2, -2.7, "contact")
             }
@@ -222,7 +229,6 @@ export default function App() {
             enableRotate={orbitMoveHandle.rotate}
             target={[prevOrbitTarget.x, prevOrbitTarget.y, prevOrbitTarget.z]}
           />
-          <axesHelper />
           {/* -------------------------stationary------------------------- */}
           <Clock
             fontColor={lightOn ? lightOnFontColor : lightOffFontColor}
@@ -241,7 +247,10 @@ export default function App() {
           <Room />
           <Desk />
           <Sofa />
-          <RemoteController setIsLoaded={setIsMeshesLoaded} />
+          <RemoteController
+            setIsLoaded={setIsMeshesLoaded}
+            onClick={() => handleBtnClick(2.5, -0.95, 2.6, 2.5, -0.95, 5, "tv")}
+          />
           <Monitor setIsLoaded={setIsMeshesLoaded} />
           <Keyboard setIsLoaded={setIsMeshesLoaded} />
           <Mouse setIsLoaded={setIsMeshesLoaded} />
