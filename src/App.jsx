@@ -156,7 +156,7 @@ export default function App() {
         {/* -------------------------buttons------------------------- */}
         {isZoomed && (
           <button
-            className="absolute bottom-10 left-1/2 z-50 transform -translate-x-1/2m-2.5 font-bold border-2 border-blue-500 rounded p-2 bg-gray-200 bg-opacity-50 hover:opacity-50 duration-300"
+            className="absolute bottom-10 left-1/2 z-50 transform -translate-x-1/2 border-2 border-blue-500 rounded p-2 bg-gray-200 bg-opacity-50 hover:opacity-50 duration-300"
             style={{ color: lightOn ? "black" : "white" }}
             onClick={() => handleBack()}
           >
@@ -177,7 +177,7 @@ export default function App() {
             projectsClick={() =>
               handleBtnClick(-2, -1.1, -2.7, -2, -1.1, -5, "projects")
             }
-            skillsClick={() => handleBtnClick(2, -1.5, 1.5, 6, 0, -2, "skills")}
+            skillsClick={() => handleBtnClick(1.5, -1, -0.6, 6, -1, 1, "skills")}
             contactClick={() =>
               handleBtnClick(-3, -1, -2.2, -2.8, -2, -2.7, "contact")
             }
