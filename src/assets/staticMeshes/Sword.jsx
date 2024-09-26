@@ -3,7 +3,7 @@ import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader";
 import { useEffect } from "react";
 import * as THREE from "three";
 
-export default function Sword({ onClick, setIsLoaded }) {
+export default function Sword({ setIsLoaded }) {
   const sword = useLoader(FBXLoader, "/meshes/sword.fbx");
 
   useEffect(() => {
@@ -33,7 +33,6 @@ export default function Sword({ onClick, setIsLoaded }) {
           THREE.MathUtils.degToRad(70),
         ]}
         scale={[0.15, 0.15, 0.15]}
-        onClick={onClick}
       />
     </>
   );

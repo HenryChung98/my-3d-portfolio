@@ -3,7 +3,7 @@ import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader";
 import { useEffect } from "react";
 import * as THREE from "three";
 
-export default function Monitor({ onClick, setIsLoaded }) {
+export default function Monitor({ setIsLoaded }) {
   const monitor = useLoader(FBXLoader, "/meshes/monitor.fbx");
 
   useEffect(() => {
@@ -28,8 +28,7 @@ export default function Monitor({ onClick, setIsLoaded }) {
         object={monitor}
         position={[-2, -1.6, -3]}
         rotation={[0, THREE.MathUtils.degToRad(270), 0]}
-        scale={[0.02, 0.02, 0.02]}
-        onClick={onClick}
+        scale={[0.03, 0.03, 0.03]}
       />
     </>
   );

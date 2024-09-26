@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import * as THREE from "three";
 
 
-export default function Mouse({ onClick, setIsLoaded }) {
+export default function Mouse({ setIsLoaded }) {
   const mouse = useLoader(FBXLoader, "/meshes/mouse.fbx");
 
   useEffect(() => {
@@ -24,8 +24,7 @@ export default function Mouse({ onClick, setIsLoaded }) {
         object={mouse}
         position={[-1.3, -1.6, -2.5]}
         rotation={[0, THREE.MathUtils.degToRad(30), 0]}
-        scale={[0.002, 0.002, 0.002]}
-        onClick={onClick}
+        scale={[0.003, 0.003, 0.003]}
       />
     </>
   );

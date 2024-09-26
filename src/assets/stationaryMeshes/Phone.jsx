@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { Text3D } from "@react-three/drei";
 import * as THREE from "three";
 
-export default function Phone({ onClick, setIsLoaded, isPopup }) {
+export default function Phone({ setIsLoaded, isPopup }) {
   const phone = useLoader(FBXLoader, "/meshes/phone.fbx");
 
   useEffect(() => {
@@ -25,7 +25,6 @@ export default function Phone({ onClick, setIsLoaded, isPopup }) {
         position={[-3.05, -1.6, -2.5]}
         rotation={[0, THREE.MathUtils.degToRad(270), 0]}
         scale={[0.02, 0.02, 0.02]}
-        onClick={onClick}
       />
       {isPopup === "contact" && (
         <>

@@ -3,7 +3,7 @@ import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader";
 import { useEffect } from "react";
 import * as THREE from "three";
 
-export default function Headset({ onClick, setIsLoaded }) {
+export default function Headset({ setIsLoaded }) {
   const headset = useLoader(FBXLoader, "/meshes/headset.fbx");
 
   useEffect(() => {
@@ -33,7 +33,6 @@ export default function Headset({ onClick, setIsLoaded }) {
           THREE.MathUtils.degToRad(160),
         ]}
         scale={[0.035, 0.035, 0.035]}
-        onClick={onClick}
       />
     </>
   );

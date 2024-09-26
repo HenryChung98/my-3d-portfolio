@@ -3,7 +3,9 @@ import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader";
 import { useEffect } from "react";
 import * as THREE from "three";
 
-export default function TV({ onClick, setIsLoaded }) {
+import Pong from "../Pong";
+
+export default function TV({ isPopup, setIsLoaded }) {
   const tv = useLoader(FBXLoader, "/meshes/tv.fbx");
   const tvShelf = useLoader(FBXLoader, "/meshes/tvShelf.fbx");
 
@@ -51,8 +53,8 @@ export default function TV({ onClick, setIsLoaded }) {
           object={tv}
           scale={[0.008, 0.008, 0.008]}
           position={[0, 0, 0]}
-          onClick={onClick}
         ></primitive>
+        {isPopup === "tv" && (<Pong />)}
       </group>
     </>
   );

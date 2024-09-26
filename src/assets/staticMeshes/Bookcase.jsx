@@ -3,7 +3,7 @@ import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader";
 import { useEffect } from "react";
 import * as THREE from "three";
 
-export default function Bookcase({ onClick, setIsLoaded }) {
+export default function Bookcase({setIsLoaded }) {
   const bookcase = useLoader(FBXLoader, "/meshes/bookcase.fbx");
 
   useEffect(() => {
@@ -40,7 +40,6 @@ export default function Bookcase({ onClick, setIsLoaded }) {
         position={[4.15, -3.01, 0]}
         rotation={[0, THREE.MathUtils.degToRad(90), 0]}
         scale={[0.055, 0.055, 0.055]}
-        onClick={onClick}
       />
     </>
   );

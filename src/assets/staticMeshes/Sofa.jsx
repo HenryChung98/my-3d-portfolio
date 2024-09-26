@@ -2,54 +2,52 @@ import React from "react";
 import { RoundedBox, useTexture } from "@react-three/drei";
 
 export default function Sofa() {
-  //   const fabricTexture = useTexture('/path/to/fabric-texture.jpg');
+  const sofaTexture = useTexture("/textures/sofa.jpeg");
 
   return (
     <group position={[2, -3.205, -3.7]}>
-      {/* 소파 좌석 */}
+      {/* seat */}
       <RoundedBox
-        args={[3, 0.6, 2]}
+        args={[4, 0.8, 2]}
         radius={0.2}
         smoothness={4}
-        position={[0, 0.5, 0]}
+        position={[0, 0.6, 0]}
         castShadow
         receiveShadow
       >
-        {/* <meshStandardMaterial map={fabricTexture} /> */}
-        <meshStandardMaterial color={"lightgray"} />
+        <meshStandardMaterial  color={"lightgray"} map=""/>
       </RoundedBox>
 
-      {/* 소파 등받이 */}
+      {/* back */}
       <RoundedBox
-        args={[3, 1.5, 0.4]}
+        args={[4, 2, 0.4]}
         radius={0.2}
         smoothness={4}
-        position={[0, 1.1, -0.8]}
-        castShadow
-        receiveShadow
-      >
-        {/* <meshStandardMaterial map={fabricTexture} /> */}
-        <meshStandardMaterial color={"lightgray"} />
-      </RoundedBox>
-
-      {/* 소파 팔걸이 좌측 */}
-      <RoundedBox
-        args={[0.5, 0.8, 2]}
-        radius={0.25}
-        smoothness={4}
-        position={[-1.5, 0.8, 0]}
+        position={[0, 1.4, -0.8]}
         castShadow
         receiveShadow
       >
         <meshStandardMaterial color={"lightgray"} />
       </RoundedBox>
 
-      {/* 소파 팔걸이 우측 */}
+      {/* left */}
       <RoundedBox
-        args={[0.5, 0.8, 2]}
+        args={[0.7, 1.2, 2]}
         radius={0.25}
         smoothness={4}
-        position={[1.5, 0.8, 0]}
+        position={[-1.65, 0.85, 0.05]}
+        castShadow
+        receiveShadow
+      >
+        <meshStandardMaterial color={"lightgray"} />
+      </RoundedBox>
+
+      {/* right */}
+      <RoundedBox
+        args={[0.7, 1.2, 2]}
+        radius={0.25}
+        smoothness={4}
+        position={[1.65, 0.85, 0.05]}
         castShadow
         receiveShadow
       >

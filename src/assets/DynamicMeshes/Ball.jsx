@@ -68,9 +68,3 @@ export default function Ball() {
     </>
   );
 }
-
-//   const initialPosition = useRef([4.7, -0.7, 0.05]);
-// [4.8, -0.15, 0],
-// [4.8, -0.8, 0],
-
-//   const initialPosition = useRef([4.7, -1.5, -2]);

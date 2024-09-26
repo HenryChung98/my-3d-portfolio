@@ -11,7 +11,7 @@ export default function RemoteController({ onClick, setIsLoaded }) {
       remoteController.traverse((child) => {
         if (child.isMesh) {
           child.material = new THREE.MeshStandardMaterial({
-            color: "#2a2a2a",
+            color: "#4e24a7",
             roughness: 0.5,
             metalness: 0.1,
           });

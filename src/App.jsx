@@ -17,6 +17,7 @@ import {
 import Popups from "./assets/htmlComponents/popups.jsx";
 import NavButtons from "./assets/htmlComponents/NavButtons.jsx";
 import LoadingScreen from "./assets/htmlComponents/LoadingScreen.jsx";
+import Instruction from "./assets/Instruction.jsx";
 
 // static components
 import Room from "./assets/staticMeshes/Room.jsx";
@@ -66,12 +67,16 @@ export default function App() {
   // to go back previous position when back button clicked
   const [prevCameraPos, setPrevCameraPos] = useState({ x: 2, y: 0, z: 2 });
   const [prevOrbitTarget, setPrevOrbitTarget] = useState({ x: 0, y: 0, z: 0 });
-  // unable to move camera when zoom-in
+
+  // disable camera movement when zoom-in
   const [orbitMoveHandle, setOrbitMoveHandle] = useState({
     pan: true,
     zoom: true,
     rotate: true,
   });
+
+  // instruction
+  const [isInstruction, setIsInstruction] = useState(false);
 
   const cameraRef = useRef();
   const orbitRef = useRef();
@@ -146,7 +151,7 @@ export default function App() {
   }
 
   // --------------------/camera handling when buttons clicked--------------------
-  const isWindowSizeLessThan500 = window.innerWidth < 500
+  const isWindowSizeLessThan500 = window.innerWidth < 500;
   return (
     <>
       {isWindowSizeLessThan500 ? (
@@ -180,7 +185,7 @@ export default function App() {
               handleBtnClick(-3.5, 1.3, -2.5, -5, 1.3, -2.5, "about")
             }
             projectsClick={() =>
-              handleBtnClick(-2, -1.1, -2.7, -2, -1.1, -5, "projects")
+              handleBtnClick(-2, -1, -2.7, -2, -1, -5, "projects")
             }
             skillsClick={() =>
               handleBtnClick(1.5, -1, -0.6, 6, -1, 1, "skills")
@@ -201,6 +206,7 @@ export default function App() {
           <button
             style={{ color: lightOn ? "black" : "white" }}
             className="m-2.5 font-bold border-2 border-blue-500 rounded p-2 bg-gray-200 bg-opacity-50 hover:opacity-50 duration-300"
+            onClick={() => setIsInstruction(!isInstruction)}
           >
             {lightOn ? (
               <IoIosHelpCircleOutline size={30} />
@@ -221,6 +227,8 @@ export default function App() {
             cameraRef.current = camera;
           }}
         >
+          {isInstruction && <Instruction />}
+
           <Lights lightOn={lightOn} />
           <OrbitControls
             ref={orbitRef}
@@ -255,7 +263,7 @@ export default function App() {
           <Keyboard setIsLoaded={setIsMeshesLoaded} />
           <Mouse setIsLoaded={setIsMeshesLoaded} />
           <Chair setIsLoaded={setIsMeshesLoaded} />
-          <TV setIsLoaded={setIsMeshesLoaded} />
+          <TV setIsLoaded={setIsMeshesLoaded} isPopup={isPopup} />
           <Bookcase setIsLoaded={setIsMeshesLoaded} />
           <YellowCube setIsLoaded={setIsMeshesLoaded} />
           <Coins setIsLoaded={setIsMeshesLoaded} />

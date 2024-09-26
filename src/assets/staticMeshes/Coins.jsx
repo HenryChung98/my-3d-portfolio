@@ -3,7 +3,7 @@ import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader";
 import { useEffect } from "react";
 import * as THREE from "three";
 
-export default function Coins({ onClick, setIsLoaded }) {
+export default function Coins({ setIsLoaded }) {
   const coins = useLoader(FBXLoader, "/meshes/coins.fbx");
 
   useEffect(() => {
@@ -29,7 +29,7 @@ export default function Coins({ onClick, setIsLoaded }) {
         position={[4.6, -2.92, -1]}
         rotation={[0, THREE.MathUtils.degToRad(270), 0]}
         scale={[0.04, 0.04, 0.04]}
-        onClick={onClick}
+
       />
     </>
   );

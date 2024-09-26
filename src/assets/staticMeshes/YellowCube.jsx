@@ -3,7 +3,7 @@ import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader";
 import { useEffect } from "react";
 import * as THREE from "three";
 
-export default function YellowCube({ onClick, setIsLoaded }) {
+export default function YellowCube({ setIsLoaded }) {
   const yellowCube = useLoader(FBXLoader, "/meshes/yellowCube.fbx");
 
   useEffect(() => {
@@ -29,7 +29,6 @@ export default function YellowCube({ onClick, setIsLoaded }) {
         position={[3.31, -3.05, 1]}
         rotation={[0, THREE.MathUtils.degToRad(0), 0]}
         scale={[0.03, 0.03, 0.03]}
-        onClick={onClick}
       />
     </>
   );

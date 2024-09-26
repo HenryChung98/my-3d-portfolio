@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import * as THREE from "three";
 
 
-export default function Keyboard({ onClick, setIsLoaded }) {
+export default function Keyboard({ setIsLoaded }) {
   const keyboard = useLoader(FBXLoader, "/meshes/keyboard.fbx");
 
   useEffect(() => {
@@ -24,8 +24,7 @@ export default function Keyboard({ onClick, setIsLoaded }) {
         object={keyboard}
         position={[-1.98, -1.6, -2.4]}
         rotation={[0, THREE.MathUtils.degToRad(0), 0]}
-        scale={[0.02, 0.02, 0.02]}
-        onClick={onClick}
+        scale={[0.03, 0.03, 0.03]}
       />
     </>
   );
