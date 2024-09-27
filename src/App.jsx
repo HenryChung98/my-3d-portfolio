@@ -1,3 +1,5 @@
+// yellowCube, bookcase, coin, sword fbx are not supported
+
 import React, { useRef, useState, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
