@@ -4,7 +4,7 @@ export default function GameProjects() {
   return (
     <>
       <DescBox
-        isPerfectSquare={false}
+        imgRatio={"landscape"}
         imgPath={"/projectDescAssets/game/levelDevilCloneBanner.gif"}
         title={"Level Devel Clone 1"}
         subTitle={"1 This is level devil clone game."}
@@ -20,7 +20,7 @@ export default function GameProjects() {
         accessMethod={"download"}
       />
       <DescBox
-        isPerfectSquare={true}
+        imgRatio={"square"}
         imgPath={"/projectDescAssets/player-right.png"}
         title={"Level Devel Clone"}
         subTitle={"This is level devil clone game."}

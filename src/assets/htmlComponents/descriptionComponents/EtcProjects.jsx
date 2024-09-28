@@ -4,7 +4,7 @@ export default function EtcProjects() {
   return (
     <>
       <DescBox
-        isPerfectSquare={false}
+        imgRatio={false}
         imgPath={"/projectDescAssets/game/levelDevilCloneBanner.gif"}
         title={"etc"}
         subTitle={"1 This is level devil clone game."}
@@ -20,7 +20,7 @@ export default function EtcProjects() {
         accessMethod={"download"}
       />
       <DescBox
-        isPerfectSquare={true}
+        imgRatio={true}
         imgPath={"/projectDescAssets/player-right.png"}
         title={"Level Devel Clone"}
         subTitle={"This is level devil clone game."}

@@ -1,6 +1,6 @@
 {
   /* <DescBox
-        isPerfectSquare={false}
+        imgRatio={"square"}
         imgPath={"/projectDescAssets/game/levelDevilCloneBanner.gif"}
         title={"etc"}
         subTitle={"1 This is level devil clone game."}
@@ -19,7 +19,7 @@
 
 export default function DescBox({
   isLast,
-  isPerfectSquare,
+  imgRatio,
   imgPath,
   title,
   subTitle,
@@ -39,10 +39,12 @@ export default function DescBox({
         <div className="w-1/2 flex justify-center">
           <img
             src={imgPath}
-            alt="description GIF"
-            className={`m-6 rounded ${
-              isPerfectSquare ? "w-[220px] h-[220px]" : "w-[300px] h-[170px]"
-            }`}
+            alt="description img"
+            className={`m-6 rounded 
+              ${imgRatio === "square" && "w-[220px] h-[220px]"}
+              ${imgRatio === "landscape" && "w-[300px] h-[170px]"} 
+              ${imgRatio === "portrait" && "w-[170px] h-[300px]"}
+            `}
           />
         </div>
         <div className="w-1/2">
