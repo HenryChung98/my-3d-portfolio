@@ -3,58 +3,45 @@ import DescBox from "./DescBox";
 export default function GameProjects() {
   return (
     <>
+     <DescBox
+        imgRatio={"portrait"}
+        imgPath={"/projectDescAssets/game/flappyBirdCloneBanner.gif"}
+        title={"Flappy Bird Clone"}
+        subTitle={"A minimalist clone of the classic Flappy Bird game"}
+        descNum={2}
+        desc={[
+          "Endless Gameplay",
+          "Challenging obstacle"
+        ]}
+        sourceCodeLink={"https://github.com/HenryChung98/Flappy-Bird-Clone"}
+        moveLink={"#"}
+        accessMethod={"download"}
+      />
       <DescBox
         imgRatio={"landscape"}
         imgPath={"/projectDescAssets/game/levelDevilCloneBanner.gif"}
-        title={"Level Devel Clone 1"}
-        subTitle={"1 This is level devil clone game."}
-        descNum={4}
-        desc={[
-          "Designed and implemented by something",
-          "Unexpected obstacle",
-          "What else",
-          "What else",
-        ]}
-        sourceCodeLink={"#"}
-        moveLink={"#"}
-        accessMethod={"download"}
-      />
-      <DescBox
-        imgRatio={"square"}
-        imgPath={"/projectDescAssets/player-right.png"}
         title={"Level Devel Clone"}
-        subTitle={"This is level devil clone game."}
-        descNum={4}
+        subTitle={"1 This is level devil clone game."}
+        descNum={3}
         desc={[
-          "Designed and implemented by something",
+          "Multiple stages",
           "Unexpected obstacle",
-          "What else",
-          "What else",
+          "Goal door to move next stage"
         ]}
-        sourceCodeLink={"#"}
-        moveLink={"#"}
+        sourceCodeLink={"https://henrychung98.github.io/project/levelDevilClone1/"}
+        moveLink={"https://9henrychung8.itch.io/level-devil-clone"}
         accessMethod={"download"}
       />
       <DescBox
-        imgPath={"/projectDescAssets/player-right.png"}
-        title={
-          "long title long titlelong titlelong titlelong titlelong titlelong title"
-        }
-        subTitle={"This is level devil clone game."}
-        descNum={7}
-        desc={[
-          "Designed and implemented by something",
-          "Unexpected obstacle",
-          "Unexpected obstacle",
-          "Unexpected obstacle",
-          "Unexpected obstacle",
-          "Unexpected obstacle",
-          "Unexpected obstacle",
-        ]}
-        isLast={true}
-        sourceCodeLink={"#"}
-        moveLink={"#"}
-        accessMethod={"download"}
+        imgRatio={"landscape"}
+        imgPath={"/projectDescAssets/game/liarGameBanner.webp"}
+        title={"Liar Game"}
+        subTitle={"Liar game application developed by JavaScript"}
+        descNum={1}
+        desc={["Simple psychological game with just a few touches"]}
+        sourceCodeLink={"https://github.com/HenryChung98/liar-game"}
+        moveLink={"https://henrychung98.github.io/liar-game/"}
+        accessMethod={"playNow"}
       />
     </>
   );

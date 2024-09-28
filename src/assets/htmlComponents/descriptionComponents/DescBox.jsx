@@ -18,7 +18,6 @@
 }
 
 export default function DescBox({
-  isLast,
   imgRatio,
   imgPath,
   title,
@@ -31,19 +30,15 @@ export default function DescBox({
 }) {
   return (
     <>
-      <div
-        className={`${
-          !isLast && "border-b-2 border-gray-900"
-        } p-2 flex justify-around`}
-      >
+      <div className={`border-b-2 border-gray-900 p-2 flex justify-around`}>
         <div className="w-1/2 flex justify-center">
           <img
             src={imgPath}
             alt="description img"
             className={`m-6 rounded 
-              ${imgRatio === "square" && "w-[220px] h-[220px]"}
-              ${imgRatio === "landscape" && "w-[300px] h-[170px]"} 
-              ${imgRatio === "portrait" && "w-[170px] h-[300px]"}
+              ${imgRatio === "square" && "w-[250px] h-[250px]"}
+              ${imgRatio === "landscape" && "w-[350px] h-[210px]"} 
+              ${imgRatio === "portrait" && "w-[210px] h-[350px]"}
             `}
           />
         </div>
@@ -63,7 +58,7 @@ export default function DescBox({
             <a href={moveLink} target="_blank" rel="noopener noreferrer">
               <li className="inline hover:text-blue-300 duration-200">
                 {accessMethod === "download" && "Download"}
-                {accessMethod === "playOnline" && "Play Online"}
+                {accessMethod === "playNow" && "Play Now"}
                 {accessMethod === "website" && "Go To Website"}
               </li>
             </a>

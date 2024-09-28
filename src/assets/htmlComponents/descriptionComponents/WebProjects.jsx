@@ -5,11 +5,11 @@ export default function WebProjects() {
     <>
       <DescBox
         imgRatio={"landscape"}
-        imgPath={"/projectDescAssets/web/auctionBanner.webp"}
+        imgPath={"/projectDescAssets/web/ecommerceBanner.webp"}
         title={"E-Commerce Website"}
         subTitle={"A Platform for e-commerce store"}
         descNum={1}
-        desc={["An intuitive auction platform built to simplify bidding"]}
+        desc={["A simple e-commerce website featuring a user-friendly interface"]}
         sourceCodeLink={"https://github.com/HenryChung98/e-commerce-website"}
       />
       <DescBox
@@ -25,15 +25,12 @@ export default function WebProjects() {
       />
       <DescBox
         imgRatio={"landscape"}
-        imgPath={"/projectDescAssets/game/levelDevilCloneBanner.gif"}
-        title={"Personal Blog"}
+        imgPath={"/projectDescAssets/web/personalBlogBanner.webp"}
+        title={"Personal Diary"}
         subTitle={"Simple personal blog application"}
-        descNum={4}
+        descNum={1}
         desc={[
-          "Designed and implemented by something",
-          "Unexpected obstacle",
-          "What else",
-          "What else",
+          "leave a short daily journal entry"
         ]}
         sourceCodeLink={"https://github.com/HenryChung98/personal-blog"}
       />
@@ -45,17 +42,6 @@ export default function WebProjects() {
         descNum={2}
         desc={["Task Management", "Checklists"]}
         sourceCodeLink={"https://github.com/HenryChung98/to-do-list-practice"}
-      />
-      <DescBox
-        imgRatio={"landscape"}
-        imgPath={"/projectDescAssets/web/liarGameBanner.webp"}
-        title={"Liar Game"}
-        subTitle={"Liar game application developed by JavaScript"}
-        descNum={1}
-        desc={["Simple sychological game with just a few touches"]}
-        sourceCodeLink={"https://github.com/HenryChung98/liar-game"}
-        moveLink={"https://henrychung98.github.io/liar-game/"}
-        accessMethod={"website"}
       />
       <DescBox
         imgRatio={"landscape"}

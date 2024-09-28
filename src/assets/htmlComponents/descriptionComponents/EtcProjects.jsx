@@ -4,7 +4,7 @@ export default function EtcProjects() {
   return (
     <>
       <DescBox
-        imgRatio={false}
+        imgRatio={"square"}
         imgPath={"/projectDescAssets/game/levelDevilCloneBanner.gif"}
         title={"etc"}
         subTitle={"1 This is level devil clone game."}
@@ -51,7 +51,6 @@ export default function EtcProjects() {
           "Unexpected obstacle",
           "Unexpected obstacle",
         ]}
-        isLast={true}
         sourceCodeLink={"#"}
         moveLink={"#"}
         accessMethod={true}
