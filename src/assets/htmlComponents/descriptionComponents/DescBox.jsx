@@ -35,10 +35,10 @@ export default function DescBox({
           <img
             src={imgPath}
             alt="description img"
-            className={`m-6 rounded 
-              ${imgRatio === "square" && "w-[250px] h-[250px]"}
-              ${imgRatio === "landscape" && "w-[350px] h-[210px]"} 
-              ${imgRatio === "portrait" && "w-[210px] h-[350px]"}
+            className={`m-6 rounded shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl border border-indigo-500
+              ${imgRatio === "square" && "w-[350px] h-[350px]"}
+              ${imgRatio === "landscape" && "w-[450px] h-[300px]"} 
+              ${imgRatio === "portrait" && "w-[300px] h-[450px]"}
             `}
           />
         </div>
