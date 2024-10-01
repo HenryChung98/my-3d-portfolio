@@ -21,12 +21,11 @@ export default function Popups({ popups }) {
           style={{ width: "500px", height: "300px" }}
         >
           <p className="flex items-center space-x-2 mb-4">
-            Hi there! I am currently pursuing a 2-year Computing Science diploma
-            at Douglas College, with a concentration in game development.
-            Passionate about creating engaging and interactive experiences, I
-            have developed several video games using programming languages such
-            as C++ and C#, alongside industry-standard game engines like Unity
-            and Unreal.
+            Hello! I am currently pursuing a two-year Computing Science diploma
+            at Douglas College, specializing in game development. I have
+            developed several video games using programming languages like C++
+            and C#, along with industry-standard game engines such as Unity and
+            Unreal.
           </p>
           <p className="flex items-center space-x-2 mb-4">
             My expertise lies in designing immersive game mechanics and building
@@ -37,18 +36,17 @@ export default function Popups({ popups }) {
         </div>
       )}
       {popups === "projects" && (
-        <div 
-        style={{backgroundColor: "#F5F5DC"}}
-        className="puff-in-center fixed z-20 w-full h-full font-bold rounded p-2 flex justify-center items-center overflow-auto">
+        <div
+          style={{ backgroundColor: "#F5F5DC" }}
+          className="puff-in-center fixed z-20 w-full h-full font-bold rounded p-2 flex justify-center items-center overflow-auto"
+        >
           <ProjectDesc />
         </div>
       )}
       {popups === "skills" && (
         <>
           <div className="fixed top-1/2 left-1/2 z-20 transform -translate-y-1/2 -translate-x-1/2 m-2.5 flex justify-center items-center">
-            <div
-              className="rotate-in-2-cw z-20 m-10 mb-64 min-w-max font-bold border-2 border-blue-500 rounded p-2 bg-gray-200 bg-opacity-90"
-            >
+            <div className="rotate-in-2-cw z-20 m-10 mb-64 min-w-max font-bold border-2 border-blue-500 rounded p-2 bg-gray-200 bg-opacity-90">
               <h2 className="p-4 text-bold">Programming Languages</h2>
               <ul className="list-none space-y-2 text-gray-600">
                 <li className="before:content-['-'] before:mr-2">C#</li>
@@ -59,9 +57,7 @@ export default function Popups({ popups }) {
                 <li className="before:content-['-'] before:mr-2">PHP</li>
               </ul>
             </div>
-            <div
-              className="rotate-in-2-cw z-20 m-10 mt-64 min-w-max font-bold border-2 border-blue-500 rounded p-2 bg-gray-200 bg-opacity-90"
-            >
+            <div className="rotate-in-2-cw z-20 m-10 mt-64 min-w-max font-bold border-2 border-blue-500 rounded p-2 bg-gray-200 bg-opacity-90">
               <h2 className="p-4 text-bold">Libraries / Frameworks</h2>
               <ul className="list-none space-y-2 text-gray-600">
                 <li className="before:content-['-'] before:mr-2">
@@ -136,9 +132,7 @@ export default function Popups({ popups }) {
                 </li>
               </ul>
             </div>
-            <div
-              className="rotate-in-2-cw z-20 m-10 mb-64 min-w-max font-bold border-2 border-blue-500 rounded p-2 bg-gray-200 bg-opacity-90"
-            >
+            <div className="rotate-in-2-cw z-20 m-10 mb-64 min-w-max font-bold border-2 border-blue-500 rounded p-2 bg-gray-200 bg-opacity-90">
               <h2 className="p-4 text-bold">Engines, etc</h2>
               <ul className="list-none space-y-2 text-gray-600">
                 <li className="before:content-['-'] before:mr-2">

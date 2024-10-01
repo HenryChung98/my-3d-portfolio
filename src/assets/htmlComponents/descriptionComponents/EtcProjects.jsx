@@ -12,7 +12,7 @@ export default function EtcProjects() {
         ]}
         imgRatio={"landscape"}
         imgPath={"/projectDescAssets/etc/fileManagerBanner.webp"}
-        sourceCodeLink={"#"}
+        sourceCodeLink={"https://github.com/HenryChung98/file-manager"}
       />
     </>
   );
