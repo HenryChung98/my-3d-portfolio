@@ -5,7 +5,7 @@ export default function GameProjects() {
     <>
       <DescBox
         imgRatio={"portrait"}
-        imgPath={"/projectDescAssets/game/flappyBirdCloneBanner.gif"}
+        imgPath={"/projectDescAssets/game/flappyBirdCloneBanner.webp"}
         title={"Flappy Bird Clone"}
         subTitle={"A minimalist clone of the classic Flappy Bird game"}
         descNum={2}
@@ -16,7 +16,7 @@ export default function GameProjects() {
       />
       <DescBox
         imgRatio={"square"}
-        imgPath={"/projectDescAssets/game/mouseAccuracyBanner.gif"}
+        imgPath={"/projectDescAssets/game/mouseAccuracyBanner.webp"}
         title={"Mouse Accuracy Training"}
         subTitle={"Mouse training for shooting games"}
         descNum={3}
@@ -27,7 +27,7 @@ export default function GameProjects() {
       />
       <DescBox
         imgRatio={"landscape"}
-        imgPath={"/projectDescAssets/game/levelDevilCloneBanner.gif"}
+        imgPath={"/projectDescAssets/game/levelDevilCloneBanner.webp"}
         title={"Level Devel Clone"}
         subTitle={"1 This is level devil clone game."}
         descNum={3}
