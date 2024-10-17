@@ -50,20 +50,6 @@ export default function NavButtons({
           </button>
         </a>
         <a
-          href="/Henry_Chung_CoverLetter_GameDev.pdf"
-          className="hover:underline"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button 
-            className="h-12 m-2.5 text-sm font-bold border-2 border-blue-500 rounded p-2 bg-gray-200 bg-opacity-50 hover:opacity-50 duration-300"
-            style={{ color: lightOn ? "black" : "white", width: "110px" }}
-          >
-            Cover Letter
-          </button>
-        </a>
-
-        <a
           href="https://henrychung98.github.io/"
           className="hover:underline"
           target="_blank"

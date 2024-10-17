@@ -158,7 +158,7 @@ export default function App() {
     <>
       {isWindowSizeLessThan500 ? (
         <div className="absolute top-1/2 left-1/2 z-50">
-          if you are using mobile, touch it.
+          mobile is not supported
         </div>
       ) : null}
       <main className="h-screen">
