@@ -17,8 +17,8 @@ export default function Popups({ popups }) {
             popups === "about"
               ? "slide-in-elliptic-top-fwd"
               : "flip-out-hor-top"
-          } slide-in-elliptic-top-fwd absolute top-1/3 left-1/2 z-20 transform -translate-y-1/2 -translate-x-1/2 m-2.5 font-bold border-2 border-blue-500 rounded p-2 bg-gray-200`}
-          style={{ width: "500px", height: "300px" }}
+          } slide-in-elliptic-top-fwd absolute top-1/4 left-1/2 z-20 transform -translate-y-1/2 -translate-x-1/2 m-2.5 font-bold border-2 border-blue-500 rounded p-2 bg-gray-200`}
+          style={{ width: "500px", height: "500px" }}
         >
           <p className="flex items-center space-x-2 mb-4">
             Hello! I am currently pursuing a two-year Computing Science diploma
@@ -32,6 +32,15 @@ export default function Popups({ popups }) {
             intuitive user interfaces. I am constantly driven to innovate and
             refine my skills to contribute meaningfully to the evolving gaming
             industry.
+          </p>
+          <p className="flex items-center space-x-2 mb-4">
+            Also, I have a solid understanding of foundational web technologies
+            like HTML, CSS, and JavaScript, and have experience with frameworks
+            like React and Next.js, using Tailwind CSS for styling. I have
+            worked on various projects focusing on efficient coding and
+            enhancing user experience, including a real-time chat system using
+            Socket.io. On the backend, I have built servers with Node.js and
+            Express, using databases like MongoDB and MySQL.
           </p>
         </div>
       )}
@@ -128,6 +137,16 @@ export default function Popups({ popups }) {
                     rel="noopener noreferrer"
                   >
                     Tailwind
+                  </a>
+                </li>
+                <li className="before:content-['-'] before:mr-2">
+                  <a
+                    href="https://socket.io/"
+                    className="hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Socket.io
                   </a>
                 </li>
               </ul>

@@ -4,6 +4,28 @@ export default function GameProjects() {
   return (
     <>
       <DescBox
+        imgRatio={"landscape"}
+        imgPath={"/projectDescAssets/game/rotationRushBanner.webp"}
+        title={"Rotation Rush"}
+        subTitle={"A minimalist clone of the classic Flappy Bird game"}
+        descNum={2}
+        desc={["Endless gameplay", "Challenging obstacle"]}
+        sourceCodeLink={"https://github.com/HenryChung98/RotationRush"}
+        moveLink={"https://9henrychung8.itch.io/rotation-rush"}
+        accessMethod={"playNow"}
+      />
+      <DescBox
+        imgRatio={"landscape"}
+        imgPath={"/projectDescAssets/game/infiniteScrollBanner.webp"}
+        title={"Infinite Scroll"}
+        subTitle={"A minimalist clone of the classic Flappy Bird game"}
+        descNum={2}
+        desc={["Endless gameplay", "Challenging obstacle"]}
+        sourceCodeLink={""}
+        moveLink={"#"}
+        accessMethod={""}
+      />
+      <DescBox
         imgRatio={"portrait"}
         imgPath={"/projectDescAssets/game/flappyBirdCloneBanner.webp"}
         title={"Flappy Bird Clone"}
@@ -20,7 +42,11 @@ export default function GameProjects() {
         title={"Mouse Accuracy Training"}
         subTitle={"Mouse training for shooting games"}
         descNum={3}
-        desc={["Precision shooting drills", "Reaction time test", "or endless gameplay"]}
+        desc={[
+          "Precision shooting drills",
+          "Reaction time test",
+          "or endless gameplay",
+        ]}
         sourceCodeLink={
           "https://github.com/HenryChung98/mouse-accuracy-training"
         }

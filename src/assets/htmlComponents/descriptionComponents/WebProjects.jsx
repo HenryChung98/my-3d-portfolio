@@ -3,6 +3,15 @@ import DescBox from "./DescBox";
 export default function WebProjects() {
   return (
     <>
+     <DescBox
+        imgRatio={"landscape"}
+        imgPath={"/projectDescAssets/web/chatAppBanner.webp"}
+        title={"Chat Application"}
+        subTitle={"A Platform for e-commerce store"}
+        descNum={1}
+        desc={["A simple e-commerce website featuring a user-friendly interface"]}
+        sourceCodeLink={"https://github.com/HenryChung98/multi-player-games"}
+      />
       <DescBox
         imgRatio={"landscape"}
         imgPath={"/projectDescAssets/web/ecommerceBanner.webp"}
