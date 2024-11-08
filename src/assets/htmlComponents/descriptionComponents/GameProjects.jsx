@@ -7,7 +7,9 @@ export default function GameProjects() {
         imgRatio={"landscape"}
         imgPath={"/projectDescAssets/game/rotationRushBanner.webp"}
         title={"Rotation Rush"}
-        subTitle={"A minimalist clone of the classic Flappy Bird game"}
+        subTitle={
+          "Endless game with screen-spinning twists and obstacle dodging"
+        }
         descNum={2}
         desc={["Endless gameplay", "Challenging obstacle"]}
         sourceCodeLink={"https://github.com/HenryChung98/RotationRush"}
@@ -18,9 +20,11 @@ export default function GameProjects() {
         imgRatio={"landscape"}
         imgPath={"/projectDescAssets/game/infiniteScrollBanner.webp"}
         title={"Infinite Scroll"}
-        subTitle={"A minimalist clone of the classic Flappy Bird game"}
-        descNum={2}
-        desc={["Endless gameplay", "Challenging obstacle"]}
+        subTitle={
+          "An endless runner where players dodge obstacles while collecting coins"
+        }
+        descNum={3}
+        desc={["Endless gameplay", "Challenging obstacle", "Collect coins"]}
         sourceCodeLink={""}
         moveLink={"#"}
         accessMethod={""}

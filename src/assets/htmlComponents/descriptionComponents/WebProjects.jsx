@@ -3,13 +3,15 @@ import DescBox from "./DescBox";
 export default function WebProjects() {
   return (
     <>
-     <DescBox
+      <DescBox
         imgRatio={"landscape"}
         imgPath={"/projectDescAssets/web/chatAppBanner.webp"}
         title={"Chat Application"}
-        subTitle={"A Platform for e-commerce store"}
+        subTitle={"Real-time chat and messaging"}
         descNum={1}
-        desc={["A simple e-commerce website featuring a user-friendly interface"]}
+        desc={[
+          "A simple chat app featuring real-time messaging and easy connectivity",
+        ]}
         sourceCodeLink={"https://github.com/HenryChung98/multi-player-games"}
       />
       <DescBox
@@ -18,7 +20,9 @@ export default function WebProjects() {
         title={"E-Commerce Website"}
         subTitle={"A Platform for e-commerce store"}
         descNum={1}
-        desc={["A simple e-commerce website featuring a user-friendly interface"]}
+        desc={[
+          "A simple e-commerce website featuring a user-friendly interface",
+        ]}
         sourceCodeLink={"https://github.com/HenryChung98/e-commerce-website"}
       />
       <DescBox
@@ -38,9 +42,7 @@ export default function WebProjects() {
         title={"Personal Diary"}
         subTitle={"Simple personal blog application"}
         descNum={1}
-        desc={[
-          "leave a short daily journal entry"
-        ]}
+        desc={["leave a short daily journal entry"]}
         sourceCodeLink={"https://github.com/HenryChung98/personal-blog"}
       />
       <DescBox
