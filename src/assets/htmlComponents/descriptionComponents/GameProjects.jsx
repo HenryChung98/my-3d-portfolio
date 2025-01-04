@@ -3,6 +3,22 @@ import DescBox from "./DescBox";
 export default function GameProjects() {
   return (
     <>
+     <DescBox
+        imgRatio={"landscape"}
+        imgPath={"/projectDescAssets/game/shooterGameBanner.webp"}
+        title={"Shooter Game"}
+        subTitle={"Shooter game developed by Unreal Engine"}
+        descNum={1}
+        desc={["Zombie game"]}
+      />
+       <DescBox
+        imgRatio={"landscape"}
+        imgPath={"/projectDescAssets/game/VRGameBanner.webp"}
+        title={"VR Game"}
+        subTitle={"VR game developed by Unreal Engine"}
+        descNum={1}
+        desc={["Meta Quest Link"]}
+      />
       <DescBox
         imgRatio={"landscape"}
         imgPath={"/projectDescAssets/game/rotationRushBanner.webp"}
