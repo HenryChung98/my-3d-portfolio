@@ -50,11 +50,11 @@ export default function DescBox({
             {subTitle}
           </h3>
           <ul style={{ color: "#1E3A8A" }} className="ml-5 text-sm ">
-            <a href={sourceCodeLink} target="_blank" rel="noopener noreferrer">
+            {sourceCodeLink && <a href={sourceCodeLink} target="_blank" rel="noopener noreferrer">
               <li className="inline mr-10 hover:text-blue-300 duration-200">
                 Source Code
               </li>
-            </a>
+            </a>}
             <a href={moveLink} target="_blank" rel="noopener noreferrer">
               <li className="inline hover:text-blue-300 duration-200">
                 {accessMethod === "download" && "Download"}

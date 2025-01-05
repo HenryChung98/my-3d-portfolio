@@ -8,16 +8,16 @@ export default function GameProjects() {
         imgPath={"/projectDescAssets/game/shooterGameBanner.webp"}
         title={"Shooter Game"}
         subTitle={"Shooter game developed by Unreal Engine"}
-        descNum={1}
-        desc={["Zombie game"]}
+        descNum={4}
+        desc={["Multiple weapons", "Realistic recoil", "Immersive animations", "Goal-Oriented gameplay"]}
       />
        <DescBox
         imgRatio={"landscape"}
         imgPath={"/projectDescAssets/game/VRGameBanner.webp"}
         title={"VR Game"}
         subTitle={"VR game developed by Unreal Engine"}
-        descNum={1}
-        desc={["Meta Quest Link"]}
+        descNum={3}
+        desc={["Intense shooting action", "dynamic hand animations", "Meta Quest Link"]}
       />
       <DescBox
         imgRatio={"landscape"}
