@@ -21,7 +21,7 @@ export default function Popups({ popups }) {
           style={{ width: "500px", height: "500px" }}
         >
           <p className="flex items-center space-x-2 mb-4">
-            Hello! I am currently pursuing a two-year Computing Science diploma
+            Hello! I am currently pursuing Computing Science diploma
             at Douglas College, specializing in game development. I have
             developed several video games using programming languages like C++
             and C#, along with industry-standard game engines such as Unity and
